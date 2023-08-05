@@ -1,7 +1,6 @@
 import {
   View,
   Text,
-  Button,
   SafeAreaView,
   TouchableOpacity,
   Image,
@@ -10,7 +9,7 @@ import React, { useRef, useState, useEffect, useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { useTailwind } from "tailwind-rn";
 import { useAuth } from "@/common/hooks/useAuth";
-import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
+import { Entypo, Ionicons } from "@expo/vector-icons";
 import Swiper from "react-native-deck-swiper";
 import SafeViewAndroid from "@/utils/SafeViewAndroid";
 
@@ -371,7 +370,7 @@ const HomeScreen = () => {
                 </Text>
                 <Image
                   source={{
-                    uri: "https://cdn.shopify.com/s/files/1/1061/1924/products/Crying_Face_Emoji_large.png?v=1571606037",
+                    uri: "https://humornama.com/wp-content/uploads/2020/10/Padhai-Likhai-Karo-meme-template-of-Mirzapur-series-1024x576.jpg",
                   }}
                   style={{ height: 100, width: 100 }}
                   height={100}

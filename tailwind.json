@@ -96,6 +96,11 @@
 			"marginTop": 20
 		}
 	},
+	"mt-80": {
+		"style": {
+			"marginTop": 320
+		}
+	},
 	"flex": {
 		"style": {
 			"display": "flex"

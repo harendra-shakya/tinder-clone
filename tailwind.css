@@ -74,6 +74,10 @@
   margin-top: 1.25rem
 }
 
+.mt-80 {
+  margin-top: 20rem
+}
+
 .flex {
   display: flex
 }

@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useTailwind } from "tailwind-rn";
 import { useAuth } from "../hooks/useAuth";
-import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
+import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { FontAwesome } from "@expo/vector-icons";
 import { Fontisto } from "@expo/vector-icons";
@@ -25,6 +25,17 @@ const Footer = () => {
             onPress={() => navigation.navigate("Home")}
           >
             <Fontisto name="tinder" size={50} color="gray" />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={tailwind("")}
+            onPress={() => navigation.navigate("Search")}
+          >
+            <MaterialCommunityIcons
+              name="account-search"
+              size={50}
+              color="gray"
+            />
           </TouchableOpacity>
 
           <TouchableOpacity
