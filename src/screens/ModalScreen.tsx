@@ -35,9 +35,14 @@ const ModalScreen = () => {
   const { user } = useAuth();
   console.log("user", user);
   const tailwind = useTailwind();
-  const [profileUrl, setProfileUrl] = useState(user ? user.pic : "");
+  const [profileUrl, setProfileUrl] = useState("");
   const [age, setAge] = useState("");
   const [job, setJob] = useState("");
+  const [bio, setBio] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [id, setId] = useState("");
+
   const n = useNavigation();
   const [uploading, setUploading] = useState(false);
   const [transferred, setTransferred] = useState(0);
@@ -51,9 +56,13 @@ const ModalScreen = () => {
     setmyProfile(myFullProfile!);
     console.log(myFullProfile, "me");
 
+    setName(myFullProfile!.name!);
+    setEmail(myFullProfile!.email!);
+    setId(myFullProfile!.id!);
     setAge(myFullProfile!.age!);
     setProfileUrl(myFullProfile!.photoUrl);
     setJob(myFullProfile!.job!);
+    setBio(myFullProfile!.bio!);
   };
   useEffect(() => {
     (async () => {
@@ -72,7 +81,10 @@ const ModalScreen = () => {
     const newDocRef = doc(db, "users", user.id);
 
     setDoc(newDocRef, {
-      ...user,
+      name,
+      email,
+      id,
+      bio,
       photoUrl: profileUrl,
       age,
       job,
@@ -184,7 +196,7 @@ const ModalScreen = () => {
             fontWeight: 700,
           }}
         >
-          Welcome {user.name}
+          Welcome {myProfile?.name}
         </Text>
 
         {/** Profile Image */}
@@ -236,12 +248,34 @@ const ModalScreen = () => {
             fontWeight: 700,
           }}
         >
+          Name
+        </Text>
+        <TextInput
+          style={{
+            textAlign: "center",
+            fontSize: 20,
+            paddingBottom: 20,
+          }}
+          placeholder="Enter Your Name"
+          onChangeText={(t) => setName(t)}
+          value={name}
+        />
+
+        <Text
+          style={{
+            fontSize: 20,
+            color: "rgba(255,0,0,0.5)",
+            marginTop: 20,
+            fontWeight: 700,
+          }}
+        >
           What's your job?
         </Text>
         <TextInput
           style={{ textAlign: "center", fontSize: 20, paddingBottom: 20 }}
           placeholder="Enter Your Job"
           onChangeText={(t) => setJob(t)}
+          value={job}
         />
         <Text
           style={{
@@ -257,6 +291,7 @@ const ModalScreen = () => {
           style={{ textAlign: "center", fontSize: 20, paddingBottom: 20 }}
           placeholder="Whats your age"
           onChangeText={(t) => setAge(t)}
+          value={age}
         />
 
         <Text
@@ -272,6 +307,8 @@ const ModalScreen = () => {
         <TextInput
           style={{ textAlign: "center", fontSize: 20, paddingBottom: 20 }}
           placeholder="Write something about yourself"
+          onChangeText={(t) => setBio(t)}
+          value={bio}
         />
         <TouchableOpacity
           disabled={incompleteForm}

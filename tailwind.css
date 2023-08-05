@@ -42,6 +42,10 @@
   top: 0px
 }
 
+.bottom-16 {
+  bottom: 4rem
+}
+
 .m-5 {
   margin: 1.25rem
 }
@@ -233,12 +237,25 @@
   border-radius: 0.5rem
 }
 
+.rounded-sm {
+  border-radius: 0.125rem
+}
+
 .rounded-tl-none {
   border-top-left-radius: 0px
 }
 
 .rounded-tr-none {
   border-top-right-radius: 0px
+}
+
+.border-t {
+  border-top-width: 1px
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity))
 }
 
 .bg-blue-200 {
@@ -377,6 +394,10 @@
 
 .pl-2 {
   padding-left: 0.5rem
+}
+
+.pl-4 {
+  padding-left: 1rem
 }
 
 .text-center {

@@ -361,20 +361,30 @@ const HomeScreen = () => {
               </View>
             ) : (
               <View
-                style={tailwind(
-                  "relative bg-white rounded-2xl h-520 flex justify-center items-center"
-                )}
+                style={[
+                  tailwind(
+                    "relative bg-white h-3/4 rounded-xl bg-white rounded-2xl flex items-center justify-center items-center"
+                  ),
+                ]}
               >
                 <Text style={{ fontWeight: 500, paddingBottom: 10 }}>
                   No More Profiles
+                </Text>
+                <Text style={{ fontSize: 18, fontWeight: "bold" }}>
+                  Dinbar Tinder Pe Right Swipe karte rehte ho
                 </Text>
                 <Image
                   source={{
                     uri: "https://humornama.com/wp-content/uploads/2020/10/Padhai-Likhai-Karo-meme-template-of-Mirzapur-series-1024x576.jpg",
                   }}
-                  style={{ height: 100, width: 100 }}
-                  height={100}
-                  width={100}
+                  style={[
+                    {
+                      width: 370,
+                      height: 300,
+                      borderRadius: 20,
+                      borderTopRightRadius: 0,
+                    },
+                  ]}
                 />
               </View>
             )

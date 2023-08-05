@@ -79,7 +79,9 @@ const AuthProvider = ({ children }: { children: ReactElement }) => {
   const [request, response, promptAsync] = Google.useIdTokenAuthRequest(config);
 
   const signInWithGoogle = async () => {
-    promptAsync();
+    setLoadingLogin(true);
+    await promptAsync();
+    setLoadingLogin(false);
   };
 
   const logOut = async () => {
