@@ -1,3 +1,23 @@
+.absolute {
+  position: absolute
+}
+
+.relative {
+  position: relative
+}
+
+.bottom-0 {
+  bottom: 0px
+}
+
+.bottom-20 {
+  bottom: 5rem
+}
+
+.left-0 {
+  left: 0px
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem
@@ -8,25 +28,108 @@
   margin-right: 0.5rem
 }
 
+.mt-3 {
+  margin-top: 0.75rem
+}
+
+.mt-1 {
+  margin-top: 0.25rem
+}
+
+.flex {
+  display: flex
+}
+
 .h-10 {
   height: 2.5rem
+}
+
+.h-20 {
+  height: 5rem
+}
+
+.h-16 {
+  height: 4rem
+}
+
+.h-3\/4 {
+  height: 75%
+}
+
+.h-full {
+  height: 100%
 }
 
 .w-10 {
   width: 2.5rem
 }
 
+.w-full {
+  width: 100%
+}
+
+.w-16 {
+  width: 4rem
+}
+
+.flex-1 {
+  flex: 1 1 0%
+}
+
+.flex-row {
+  flex-direction: row
+}
+
 .items-center {
   align-items: center
+}
+
+.justify-end {
+  justify-content: flex-end
+}
+
+.justify-center {
+  justify-content: center
+}
+
+.justify-between {
+  justify-content: space-between
+}
+
+.justify-evenly {
+  justify-content: space-evenly
 }
 
 .rounded-full {
   border-radius: 9999px
 }
 
+.rounded-xl {
+  border-radius: 0.75rem
+}
+
+.rounded-2xl {
+  border-radius: 1rem
+}
+
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity))
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity))
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity))
 }
 
 .px-3 {
@@ -37,6 +140,26 @@
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem
 }
 
 .pt-12 {

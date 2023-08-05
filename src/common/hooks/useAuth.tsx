@@ -108,26 +108,22 @@ const AuthProvider = ({ children }: { children: ReactElement }) => {
     }
   };
 
-  // const memoedValue = useMemo(()=>({
-  //   user,
-  //   loadingLogin,
-  //   signInWithGoogle,
-  //   logOut
-  // }) , [user, loadingLogin])
+  const memoedValue = useMemo(
+    () => ({
+      test,
+      setTest,
+      user,
+      setUser,
+      signInWithGoogle,
+      token,
+      loadingLogin,
+      logOut,
+    }),
+    [user, loadingLogin, signInWithGoogle, logOut]
+  );
 
   return (
-    <AuthContext.Provider
-      value={{
-        test,
-        setTest,
-        user,
-        setUser,
-        signInWithGoogle,
-        token,
-        loadingLogin,
-        logOut,
-      }}
-    >
+    <AuthContext.Provider value={memoedValue}>
       {loadingLogin ? <ActivityIndicator /> : children}
     </AuthContext.Provider>
   );
