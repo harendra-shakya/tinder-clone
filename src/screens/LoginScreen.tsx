@@ -20,13 +20,6 @@ const LoginScreen = () => {
         source={{ uri: "https://tinder.com/static/tinder.png" }}
       />
 
-      {/* <TouchableOpacity 
-        onPress={signInWithGoogle}
-        style={{ position: 'absolute', bottom: 100, width: 142 , padding: 10 , backgroundColor:'white', borderRadius: 20,left:'35%'}}
-        >
-          <Text style={{textAlign:'center', fontWeight:'500'}} >Let's get started</Text>
-      </TouchableOpacity> */}
-
       <TouchableOpacity
         style={[
           tailwind("absolute bottom-40 w-52 bg-white p-4 rounded-2xl"),
