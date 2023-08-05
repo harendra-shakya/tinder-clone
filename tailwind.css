@@ -1,5 +1,19 @@
-.hidden {
-  display: none
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem
+}
+
+.h-10 {
+  height: 2.5rem
+}
+
+.w-10 {
+  width: 2.5rem
 }
 
 .items-center {
@@ -27,6 +41,18 @@
 
 .pt-12 {
   padding-top: 3rem
+}
+
+.pt-2 {
+  padding-top: 0.5rem
+}
+
+.pt-10 {
+  padding-top: 2.5rem
+}
+
+.pt-8 {
+  padding-top: 2rem
 }
 
 .font-semibold {

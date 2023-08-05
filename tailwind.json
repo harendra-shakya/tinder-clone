@@ -1,7 +1,24 @@
 {
-	"hidden": {
+	"mx-10": {
 		"style": {
-			"display": "none"
+			"marginLeft": 40,
+			"marginRight": 40
+		}
+	},
+	"mx-2": {
+		"style": {
+			"marginLeft": 8,
+			"marginRight": 8
+		}
+	},
+	"h-10": {
+		"style": {
+			"height": 40
+		}
+	},
+	"w-10": {
+		"style": {
+			"width": 40
 		}
 	},
 	"items-center": {
@@ -38,6 +55,21 @@
 	"pt-12": {
 		"style": {
 			"paddingTop": 48
+		}
+	},
+	"pt-2": {
+		"style": {
+			"paddingTop": 8
+		}
+	},
+	"pt-10": {
+		"style": {
+			"paddingTop": 40
+		}
+	},
+	"pt-8": {
+		"style": {
+			"paddingTop": 32
 		}
 	},
 	"font-semibold": {
