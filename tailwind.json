@@ -29,6 +29,16 @@
 			"bottom": 160
 		}
 	},
+	"bottom-4": {
+		"style": {
+			"bottom": 16
+		}
+	},
+	"bottom-2": {
+		"style": {
+			"bottom": 8
+		}
+	},
 	"mx-10": {
 		"style": {
 			"marginLeft": 40,
@@ -39,6 +49,18 @@
 		"style": {
 			"marginLeft": 8,
 			"marginRight": 8
+		}
+	},
+	"mx-5": {
+		"style": {
+			"marginLeft": 20,
+			"marginRight": 20
+		}
+	},
+	"mx-4": {
+		"style": {
+			"marginLeft": 16,
+			"marginRight": 16
 		}
 	},
 	"mt-3": {

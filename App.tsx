@@ -3,8 +3,8 @@ import { TailwindProvider } from "tailwind-rn";
 import StackNavigation from "./StackNavigation";
 import { NavigationContainer } from "@react-navigation/native";
 import { AuthProvider } from "@/common/hooks/useAuth";
+import Footer from "@/common/components/Footer";
 
-import Hello from "@components/Hello";
 import utilities from "./tailwind.json";
 
 export default function App() {
@@ -13,6 +13,7 @@ export default function App() {
       <NavigationContainer>
         <AuthProvider>
           <StackNavigation />
+          <Footer />
         </AuthProvider>
       </NavigationContainer>
     </TailwindProvider>
