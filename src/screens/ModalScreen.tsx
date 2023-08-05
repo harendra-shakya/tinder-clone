@@ -8,6 +8,7 @@ import {
   StyleSheet,
   Platform,
   ScrollView,
+  Button,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import {
@@ -32,7 +33,7 @@ import { useAuth } from "@/common/hooks/useAuth";
 import { useTailwind } from "tailwind-rn";
 
 const ModalScreen = () => {
-  const { user } = useAuth();
+  const { user, logOut } = useAuth();
   console.log("user", user);
   const tailwind = useTailwind();
   const [profileUrl, setProfileUrl] = useState("");
@@ -56,17 +57,17 @@ const ModalScreen = () => {
     setmyProfile(myFullProfile!);
     console.log(myFullProfile, "me");
 
-    setName(myFullProfile!.name!);
-    setEmail(myFullProfile!.email!);
+    setName(myFullProfile?.name! ? myFullProfile!.name! : user.name);
+    setEmail(myFullProfile?.email! ? myFullProfile!.email! : user.email);
     setId(myFullProfile!.id!);
-    setAge(myFullProfile!.age!);
-    setProfileUrl(myFullProfile!.photoUrl);
-    setJob(myFullProfile!.job!);
+    setAge(myFullProfile!.age! || age);
+    setProfileUrl(myFullProfile?.photoUrl ? myFullProfile!.photoUrl : user.pic);
+    setJob(myFullProfile!.job! || job);
     setBio(myFullProfile!.bio!);
   };
   useEffect(() => {
     (async () => {
-      getMyFullProfile();
+      await getMyFullProfile();
 
       if (Platform.OS !== "web") {
         const { status } =
@@ -80,10 +81,10 @@ const ModalScreen = () => {
   const updateProfileHandler = async () => {
     const newDocRef = doc(db, "users", user.id);
 
-    setDoc(newDocRef, {
-      name,
-      email,
-      id,
+    updateDoc(newDocRef, {
+      name: name ? name : user.name,
+      email: user.email,
+      id: user.id,
       bio,
       photoUrl: profileUrl,
       age,
@@ -196,7 +197,7 @@ const ModalScreen = () => {
             fontWeight: 700,
           }}
         >
-          Welcome {myProfile?.name}
+          Welcome {myProfile?.name ? myProfile?.name : user.name}
         </Text>
 
         {/** Profile Image */}
@@ -328,6 +329,8 @@ const ModalScreen = () => {
             Update Profile
           </Text>
         </TouchableOpacity>
+
+        <Button title="LogOut" color="#FF5864" onPress={logOut} />
       </View>
     </ScrollView>
   );
