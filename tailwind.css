@@ -18,6 +18,10 @@
   left: 0px
 }
 
+.bottom-40 {
+  bottom: 10rem
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem
@@ -70,6 +74,14 @@
 
 .w-16 {
   width: 4rem
+}
+
+.w-52 {
+  width: 13rem
+}
+
+.w-80 {
+  width: 20rem
 }
 
 .flex-1 {
@@ -132,6 +144,19 @@
   background-color: rgb(254 202 202 / var(--tw-bg-opacity))
 }
 
+.bg-transparent {
+  background-color: transparent
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity))
+}
+
+.p-4 {
+  padding: 1rem
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem
@@ -176,6 +201,10 @@
 
 .pt-8 {
   padding-top: 2rem
+}
+
+.text-center {
+  text-align: center
 }
 
 .font-semibold {
