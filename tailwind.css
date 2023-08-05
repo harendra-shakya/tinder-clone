@@ -34,6 +34,14 @@
   bottom: 0.5rem
 }
 
+.-left-14 {
+  left: -3.5rem
+}
+
+.top-0 {
+  top: 0px
+}
+
 .m-5 {
   margin: 1.25rem
 }
@@ -58,6 +66,21 @@
   margin-right: 1rem
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
 .mt-3 {
   margin-top: 0.75rem
 }
@@ -76,6 +99,22 @@
 
 .mt-80 {
   margin-top: 20rem
+}
+
+.mr-4 {
+  margin-right: 1rem
+}
+
+.mt-4 {
+  margin-top: 1rem
+}
+
+.ml-14 {
+  margin-left: 3.5rem
+}
+
+.mt-8 {
+  margin-top: 2rem
 }
 
 .flex {
@@ -114,6 +153,10 @@
   height: 8rem
 }
 
+.h-12 {
+  height: 3rem
+}
+
 .min-h-screen {
   min-height: 100vh
 }
@@ -140,6 +183,10 @@
 
 .w-32 {
   width: 8rem
+}
+
+.w-12 {
+  width: 3rem
 }
 
 .flex-1 {
@@ -182,6 +229,18 @@
   border-radius: 1rem
 }
 
+.rounded-lg {
+  border-radius: 0.5rem
+}
+
+.rounded-tl-none {
+  border-top-left-radius: 0px
+}
+
+.rounded-tr-none {
+  border-top-right-radius: 0px
+}
+
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity))
@@ -216,8 +275,30 @@
   background-color: rgb(239 68 68 / var(--tw-bg-opacity))
 }
 
+.bg-purple-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity))
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity))
+}
+
 .p-4 {
   padding: 1rem
+}
+
+.p-2 {
+  padding: 0.5rem
+}
+
+.p-3 {
+  padding: 0.75rem
+}
+
+.p-5 {
+  padding: 1.25rem
 }
 
 .px-3 {
@@ -260,6 +341,16 @@
   padding-bottom: 2rem
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+
 .pt-12 {
   padding-top: 3rem
 }
@@ -284,12 +375,34 @@
   padding-top: 5rem
 }
 
+.pl-2 {
+  padding-left: 0.5rem
+}
+
 .text-center {
   text-align: center
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
 .font-semibold {
   font-weight: 600
+}
+
+.font-bold {
+  font-weight: 700
+}
+
+.font-light {
+  font-weight: 300
 }
 
 .text-blue-800 {
