@@ -1,3 +1,9 @@
+I Built a Tinder clone in under 24 hours.
+
+I challenged myself yesterday to build a Tinder clone in under 24 hours, and if I failed, I'd work on a client project for free and do 1000 pushups as a punishment.
+
+The Google authentication was challenging. After trying 3 different libraries, it consumed most of my time, but I successfully completed the challenge despite having only 3 hours of sleep and skipping lunch. :)
+
 ## How I built this
 
 Here's a description of the functionalities used to build the Tinder clone:
@@ -31,6 +37,14 @@ Here's a description of the functionalities used to build the Tinder clone:
 Overall, this Tinder clone leveraged a combination of powerful technologies and functionalities to replicate the core features of the popular dating app, providing users with a seamless and enjoyable matchmaking experience.
 
 ## Getting Started
+
+1. `git clone https://github.com/harendra-shakya/tinder-clone.git`
+
+1. **Hide the API key in an environment (env) file:** The repository may contain sensitive API keys or credentials. Make sure not to expose them in the code directly. Instead, store them in a separate `.env` file and add that file to your `.gitignore` to prevent accidental commits.
+
+1. **Be cautious with pushed variables:** During development, I might have accidentally pushed some variables with sensitive information. Please double-check and ensure that no sensitive information is exposed in the commits.
+
+I am working on a tight deadline, and I need to build this project within 24 hours that's why I pushed some vars by mistake.
 
 Install dependencies
 
@@ -89,3 +103,7 @@ project
 |   |   |-- constants         ℹ️ keep your constants
 |   |   |                     ℹ️ keep your util functions
 ```
+
+If you have any questions or concerns, feel free to reach out.
+
+Happy coding!
